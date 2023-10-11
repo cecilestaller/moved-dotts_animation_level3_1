@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: punkte;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+
+}
+
+@keyframes punkte {
+
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(300px, 0px);
+    }
+
+    50% {
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        transform: translate(0px, 300px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.yellow {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: punkte;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 2.5s;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: punkte;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 5s;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: punkte;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-delay: 7.5s;
+}
